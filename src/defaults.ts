@@ -1,0 +1,135 @@
+/** Compile-time layout and style constants for the inspect panel widgets. */
+export const DEFAULTS = {
+  labeledControlGap: 0,
+  valueColumnWidth: 210,
+  controlInnerGap: 4,
+
+  buttonRowGap: 2,
+
+  folderHeaderGap: 4,
+  folderHeaderPadding: 4,
+  folderChevronWidth: 12,
+  folderChevronSize: 5,
+  folderAnimDurationMs: 200,
+  folderHeaderBorderHeight: 1,
+
+  sliderValueWidth: 70,
+  sliderValueBgRadius: 2,
+  sliderValuePaddingRight: 4,
+  sliderTrackHeight: 7,
+  sliderTrackRadius: 2,
+  sliderThumbMaxDiameter: 12,
+  sliderKnobShadowColor: 0x00000066,
+  sliderDefaultThumbColor: 0xffffffeb,
+  sliderKnobShadowOffsetY: 1,
+
+  scrubHitWidth: 12,
+  scrubLineWidth: 2,
+  scrubLineInset: 2,
+  scrubLineLeft: 4,
+  scrubLineHoverColor: 0xffffffee,
+  scrubLineNormalColor: 0xffffff1a,
+  editInputBg: "rgba(255, 255, 255, 0.12)",
+  editInputColor: "rgba(255, 255, 255, 0.85)",
+  editInputZIndex: "1000001",
+  editInputCaretColor: "rgba(255, 255, 255, 0.85)",
+
+  checkboxSize: 24,
+  checkboxBorderRadius: 3,
+  checkboxCheckLineWidth: 2,
+  checkboxDefaultBorderColor: 0xffffff26,
+
+  colorSvSize: 96,
+  colorHueBarHeight: 24,
+  colorAlphaBarHeight: 24,
+  colorPickerPadding: 6,
+  colorSwatchWidth: 24,
+  colorSwatchBorderRadius: 2,
+  colorSwatchBorderColor: 0xffffff26,
+  colorSwatchBorderWidth: 1,
+  colorPickerBorderWidth: 1,
+  colorSvSteps: 16,
+  colorCrosshairArm: 5,
+  colorHueSteps: 24,
+  colorHueMarkerWidth: 3,
+  colorAlphaCheckSize: 4,
+  colorAlphaSteps: 24,
+
+  monitorRingSize: 64,
+  monitorGraphHeight: 72,
+  monitorGraphBorderRadius: 3,
+  monitorGraphStrokeWidth: 1,
+
+  reorderRowHeight: 24,
+  reorderHandleWidth: 20,
+  reorderIndicatorColor: 0x4488ffff,
+  reorderIndicatorHeight: 2,
+  reorderRowBgColor: 0xffffff0d,
+  reorderRowBorderRadius: 4,
+  reorderHandleColor: 0xffffff4d,
+  reorderItemLabelColor: 0xffffffb3,
+
+  separatorHeight: 2,
+  separatorDefaultColor: 0x222222ff,
+  separatorDefaultThickness: 1,
+
+  tabBarHeight: 35,
+  tabArrowWidth: 18,
+  tabArrowHalf: 5,
+  tabStripPaddingTop: 8,
+  tabStripPaddingSide: 8,
+  tabRadius: 9,
+  tabSeparatorHeight: 15,
+  tabSeparatorColor: 0xffffff24,
+  tabHoverColor: 0xffffff0d,
+  tabIndicatorHeight: 2,
+  tabPadding: 16,
+  tabInitialCapacity: 32,
+
+  scrollSpeed: 40,
+  scrollThumbMinHeight: 16,
+  scrollDefaultWidth: 5,
+  scrollThumbBorderRadius: 3,
+
+  textInputSelectionColor: 0x2a4a6aff,
+  textInputPadding: 4,
+
+  buttonDisabledAlpha: 0.4,
+
+  toggleActiveBorderColor: 0xffffff26,
+
+  textLogDefaultRows: 4,
+  textLogDefaultLineHeight: 16,
+  textLogLabelColor: 0xffffff80,
+  textLogBorderRadius: 3,
+  textLogThemeLineHeight: 14,
+  textLogThemePadding: 12,
+
+  pointAxisGap: 2,
+  pointAxisInnerGap: 2,
+  pointInputBorderRadius: 2,
+
+  backdropColor: 0x00000001,
+  overlayDefaultBackdropColor: 0x00000099,
+
+  toggleIconHoveredStroke: "rgba(255,255,255,0.9)",
+  toggleIconNormalStroke: "rgba(255,255,255,0.5)",
+
+  selectDropdownBorderWidth: 1,
+
+  guiTabContainerTabBarHeight: 28,
+
+  panelDefaultWidth: 400,
+  panelDefaultFontSize: 11,
+  panelDefaultToggleKey: "p",
+  panelDefaultStorageKey: "inspect-visible",
+  panelDefaultFontFamily: "monospace",
+  panelZIndex: "999999",
+  panelTransitionDuration: "0.7s",
+  // cubic-bezier control points that approximate a quintic ease-in-out for the panel slide.
+  panelTransitionEasing: "cubic-bezier(0.83, 0, 0.17, 1)",
+  panelHiddenOffsetExtra: 50,
+  panelBoxShadowX: 7,
+  panelBoxShadowBlur: 12,
+  panelBoxShadowColor: "rgba(0, 0, 0, 0.5)"
+};
