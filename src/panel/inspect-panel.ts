@@ -52,6 +52,7 @@ const THEME_KEYS: ReadonlySet<string> = new Set<keyof InspectTheme>([
   "bgAccentDim",
   "textLabel",
   "bgOverlay",
+  "bgDropdown",
   "controlHeight",
   "controlGap",
   "labelRatio",

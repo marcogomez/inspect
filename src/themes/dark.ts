@@ -46,6 +46,9 @@ export function createDarkTheme(fontAtlas: FontAtlas): InspectTheme {
     bgAccentDim: 0x82b4ff4d,
     textLabel: 0xffffff80,
     bgOverlay: 0x000000aa,
+    // the raised wash composited over the panel stack lands on this color, so
+    // dropdowns keep the same look while staying solid over whatever they cover
+    bgDropdown: 0x222226ff,
     controlHeight: 24,
     controlGap: 4,
     labelRatio: 0.36,

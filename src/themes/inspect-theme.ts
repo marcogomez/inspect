@@ -9,6 +9,8 @@ export interface InspectTheme extends Theme {
   bgAccentDim: number;
   textLabel: number;
   bgOverlay: number;
+  /** opaque fill for floating dropdown lists, which draw over arbitrary panel content. */
+  bgDropdown: number;
   controlHeight: number;
   controlGap: number;
   /** fraction of control width given to the label column. */

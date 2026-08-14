@@ -145,7 +145,7 @@ export class GuiSelect<T> extends LabeledControl {
     dropdown.anchorTop = this._button.absoluteY + this._button.height;
     dropdown.preferredWidth = this._button.width;
     dropdown.preferredHeight = this._cachedKeys.length * itemHeight;
-    dropdown.bgColor = theme?.bgPanelRaised ?? 0x333333ff;
+    dropdown.bgColor = theme?.bgDropdown ?? 0x222226ff;
     dropdown.borderColor = theme?.borderPanel ?? 0x555555ff;
 
     for (let i = 0; i < dropdown.children.length; i++) {
