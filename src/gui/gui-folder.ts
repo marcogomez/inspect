@@ -147,7 +147,9 @@ export class GuiFolder extends Widget {
   /**
    * Animation frame step: eases the preferred height from the start toward the
    * target, invalidates the ancestor layout chain, and repaints. On the final
-   * frame it settles content visibility and returns the folder to fit sizing.
+   * frame it settles content visibility and returns the folder to fit sizing,
+   * clearing the preferred height it drove so the folder measures its content
+   * again rather than reporting the height it had when the animation ended.
    */
   private readonly _boundTick = (): void => {
     if (!this._animating) {
@@ -171,6 +173,7 @@ export class GuiFolder extends Widget {
       this._animRafId = 0;
       this._content.visible = this._expanded;
       this.sizingY = "fit";
+      this.preferredHeight = 0;
       this.invalidateLayout();
     } else {
       this._animRafId = requestAnimationFrame(this._boundTick);
